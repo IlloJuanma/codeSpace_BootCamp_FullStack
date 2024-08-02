@@ -1,0 +1,83 @@
+.films__container ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.film__item {
+    flex: 1 1 calc(25% - 10px);
+}
+
+.film__img {
+    width: 100%;
+    height: auto;
+}
+
+.film__data-separator {
+    position: relative;
+    background-color: #e9cb07;
+    height: 1px;
+    width: 48px;
+    bottom: 220px;
+    margin-left: 20px;
+}
+
+.film__title {
+    position: absolute;
+    color: var(--color-white);
+    bottom: 150px;
+    padding-inline-start: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.film__title:hover {
+    color: var(--color-grey);
+    transition: 0.5s;
+}
+
+.film__category {
+    position: absolute;
+    color: var(--color-grey);
+    bottom: 120px;
+    padding-inline-start: 20px;
+    font-size: 15px;
+}
+
+.film__category:hover {
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+.watch__trailer {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    color: var(--color-white);
+    bottom: 40px;
+    padding-inline-start: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    h3::before {
+        content: "🡲";
+        padding-right: 10px;
+    }
+
+    h3:hover {
+        color: var(--color-grey);
+        transition: 0.5s;
+    }
+
+    h4:hover {
+        color: var(--color-grey);
+        transition: 0.5s;
+    }
+
+    h4::before {
+        content: "🠞";
+        padding-right: 10px;
+    }
+}

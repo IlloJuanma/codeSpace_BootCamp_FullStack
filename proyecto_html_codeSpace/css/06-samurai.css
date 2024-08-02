@@ -1,0 +1,93 @@
+.samurai__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    min-height: 700px;
+    gap: 70px;
+}
+
+.samurai__img {
+    max-width: 650px;
+}
+
+.samurai__data-line {
+    background-color: var(--color-highlight);
+    height: 1px;
+    width: 48px;
+    margin-bottom: 40px;
+}
+
+.samurai__data {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    h2 {
+        color: grey;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        color: black;
+        font-size: 30px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    p {
+        color: var(--color-grey);
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+}
+
+.samurai__data-info {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    color: #1A1D24;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.samurai__info {
+    display: flex;
+    gap: 50px;
+}
+
+.samurai__info-view {
+    color: var(--color-highlight);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.samurai__info-view::before {
+    content: "➞";
+    margin-right: 10px;
+}
+
+.samurai__info-view:hover {
+    cursor: pointer;
+    color: #960819;
+}
+
+.samurai__info-trailer {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.samurai__info-trailer::before {
+    content: "🠊";
+    margin-right: 10px;
+}
+
+.samurai__info-trailer:hover {
+    cursor: pointer;
+    color: #960819;
+}

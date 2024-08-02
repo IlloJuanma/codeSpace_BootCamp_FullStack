@@ -1,0 +1,61 @@
+.header {
+    position: sticky;
+    background-color: var(--color-bg);
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    block-size: var(--header-height);
+    /*Como si fuera height*/
+    /* padding-inline: 50px; */
+
+    .tools {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-medium);
+        /* Separacion de los elementos */
+    }
+
+    & svg {
+        /* Con & estamos atacando al .header que es el padre */
+        fill: var(--color-text-primary);
+        inline-size: 18px;
+        block-size: 18px;
+    }
+
+    .separator {
+        font-size: var(--font-size-large);
+        color: var(--color-text-muted);
+    }
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul.menu {
+        gap: 25px;
+        color: var(--color-text-primary);
+    }
+
+    .nav ul.social {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-medium);
+    }
+
+    .nav .menu .item {
+        font: var(--font-size-small);
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+        /* Esto evita que el hover(rojo) haga un desplazamiento hacia arriba */
+        padding-block-end: 5px;
+    }
+
+    .nav .menu .item:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--color-highlight);
+    }
+}

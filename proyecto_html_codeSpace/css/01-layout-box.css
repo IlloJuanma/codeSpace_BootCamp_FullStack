@@ -1,0 +1,15 @@
+.layout-box {
+    max-inline-size: var(--container-width);
+    margin-inline: auto;
+    /* Márgenes en ambos lados */
+}
+
+.layout-box2 {
+    max-inline-size: var(--container-width);
+    margin-inline: auto;
+    /* Márgenes en ambos lados */
+    display: flex;
+    align-items: center;
+    gap: var(--gap-large);
+    justify-content: space-between;
+}

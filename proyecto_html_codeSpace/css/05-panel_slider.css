@@ -1,0 +1,30 @@
+.panel ul {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    position: relative;
+}
+
+.slider__item img {
+    width: 217px;
+    height: 316px;
+}
+
+/* Queda pendiente oscurecer la imagen */
+
+.slider__item-title {
+    position: absolute;
+    bottom: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-inline-start: 10px;
+    font-size: 18px;
+}
+
+.slider__category {
+    position: absolute;
+    bottom: 20px;
+    padding-inline-start: 10px;
+    color: grey;
+    font-size: 15px;
+}
